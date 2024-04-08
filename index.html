@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Generator</h1>
+        <input type="text" id="searchInput" placeholder="Search for meal category..." list="categoriesSuggestions">
+        <datalist id="categoriesSuggestions">
+            <!-- Category options will be dynamically populated here -->
+        </datalist>
+    </header>
+    <main>
+        <section id="randomMeal">
+            <h2>Random Meal</h2>
+            <div id="randomMealImage"></div>
+            <p id="randomMealName"></p>
+        </section>
+        <section id="searchedMeals">
+            <h2>List of Searched Meal Categories</h2>
+            <div id="mealCategoryList"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
